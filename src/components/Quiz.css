@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'New Order';
+    src: url('/public/fonts/New Order Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roca';
+    src: url('/public/fonts/Roca Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.quiz-container {
+    text-align: center;
+    padding: 0;
+    min-height: 100vh; /* Garante que o container ocupe a altura total */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff; /* Mesma cor de fundo para consistência */
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Cor cinza */
+    padding: 40px 20px; /* Aumenta a área do cabeçalho */
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px; /* Adiciona algum padding nas laterais para espaçamento */
+}
+
+.header-left {
+    font-size: 4rem; /* Aumenta o tamanho do texto do título */
+    color: #fff; /* Muda a cor do texto para branco */
+    font-family: 'New Order', 'Times New Roman', Times, serif; /* Aplica a fonte New Order */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 20px; /* Adiciona margens abaixo da palavra "aura" */
+}
+
+.question {
+    font-size: 2rem; /* Aumenta o tamanho do texto da pergunta */
+    color: #fff; /* Muda a cor do texto para branco */
+    margin: 10px 0; /* Ajusta a margem para centralizar a pergunta */
+    font-family: 'Roca', 'Times New Roman', Times, serif; /* Aplica a fonte 'Roca' */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    width: 80%; /* Ocupa 80% da largura disponível */
+}
+
+.quiz-progress-bar {
+    width: 100%;
+    height: 20px; /* Ajusta a altura da barra de progresso */
+    background-color: #e0e0e0;
+    border-radius: 0px;
+    overflow: hidden;
+    margin: 0 auto 30px; /* Ajusta margens para posicionar a barra mais próxima ao cabeçalho */
+}
+
+.quiz-progress-fill {
+    background-color:#30BF80;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Altera para uma coluna para empilhar respostas verticalmente */
+    grid-gap: 1em; /* Ajusta a distância entre os botões */
+    justify-items: center;
+    margin: 20px auto; /* Ajusta margens */
+    padding: 0 20px;
+}
+
+.option-button,
+.next-button {
+    width: 34em; /* Ajusta a largura dos botões */
+    height: 4.5em; /* Ajusta a altura dos botões */
+    font-size: 1.3rem; /* Ajusta o tamanho da fonte */
+    background-color: #ffffff; /* Define a cor de fundo dos botões para branco */
+    color: #000000; /* Define a cor do texto para preto */
+    border: 3px solid #BCC3CA; /* Adiciona uma borda sólida de 3px com a cor #BCC3CA */
+    border-radius: 30px; /* Torna os botões mais circulares */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease, color 0.3s ease;
+    white-space: normal; /* Permite que o texto seja dividido em várias linhas */
+    overflow: visible; /* Permite visibilidade de todo o conteúdo */
+    text-overflow: initial; /* Reseta o truncamento do texto */
+    font-family: 'Roca', 'Times New Roman', Times, serif; /* Aplica a fonte 'Roca' aos botões */
+    box-shadow: 0 4px 8px #BCC3CA; /* Adiciona uma sombra ao botão com a cor #BCC3CA */
+}
+
+.option-button:hover,
+.next-button:hover {
+    background-color: #BCC3CA; /* Muda a cor de fundo dos botões quando em hover */
+    color: #fff; /* Muda a cor do texto dos botões para branco ao passar o mouse */
+    border-color: #BCC3CA; /* Mantém a cor da borda dos botões ao passar o mouse */
+}
+
+.option-button.selected {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.back-button {
+    width: 7em; /* Ajusta a largura do botão Back */
+    height: auto; /* Deixe o height automático para acomodar o texto */
+    font-size: 1.8rem; /* Ajusta o tamanho da fonte do botão Back */
+    text-shadow: #BCC3CA;
+    padding: 0.75em 1.5em; /* Ajusta o padding para adicionar espaço dentro do botão */
+    background-color: #EBECEE; /* Muda a cor de fundo do botão Back */
+    color: #000000; /* Muda a cor do texto do botão Back */
+    border: none;
+    border-radius: 40px; /* Torna o botão Back mais circular */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 20px; /* Adiciona mais espaço acima do botão */
+    font-family: 'Roca', 'Times New Roman', Times, serif; /* Aplica a fonte 'Roca' aos botões */
+    box-shadow: 0 8px 16px #BCC3CA; /* Adiciona uma sombra ao botão com a cor #BCC3CA */
+}
+
+.back-button:hover {
+    background-color: #BCC3CA; /* Muda a cor de fundo do botão Back quando em hover para a cor do texto original */
+    color: #fff; /* Muda a cor do texto do botão Back para branco ao passar o mouse */
+}

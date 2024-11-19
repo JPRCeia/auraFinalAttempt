@@ -1,0 +1,116 @@
+@font-face {
+    font-family: '72 Brand';
+    src: url('/public/fonts/72-Bold.woff') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.result-container {
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px; /* Ajusta o padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white; /* Mantém o fundo branco */
+}
+
+.result-container h1 {
+    margin-bottom: 20px; /* Ajusta o espaçamento inferior */
+    font-size: 2rem; /* Ajusta o tamanho da fonte */
+    color: inherit; /* Permite que a cor seja herdada do estilo inline */
+    text-align: center;
+}
+
+.result-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column; /* Muda para coluna para melhor visualização em tablet */
+    align-items: center;
+    margin-bottom: 20px; /* Ajusta o espaçamento inferior */
+}
+
+.description-container {
+    font-family: '72 Brand', Arial, sans-serif; /* Aplica a fonte 72 Brand */
+    width: 100%;
+    text-align: left;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    color: black; /* Descrição da personalidade em preto */
+    margin-bottom: 20px; /* Ajusta a margem inferior */
+}
+
+.response-list {
+    width: 100%;
+    margin-top: 10px; /* Ajusta espaçamento superior */
+    text-align: left;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 49px;
+    height: 61px;
+    width: 243px;
+    margin-bottom: 20px; /* Ajusta o espaçamento inferior */
+}
+
+.label {
+    flex: 2;
+    text-align: left;
+    color: black;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    margin-right: 20px; /* Ajusta o espaçamento à direita */
+}
+
+.personality-label {
+    text-align: left;
+    color: black;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    margin-bottom: 5px; /* Espaçamento inferior para afastar ligeiramente da barra */
+}
+
+.bar {
+    flex: 5;
+    width: 141px;
+    height: 44px;
+    background-color: #e0e0e0;
+    border-radius: 49px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.percent {
+    text-align: right;
+    color: black;
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+}
+
+.restart-button {
+    padding: 10px 20px; /* Ajusta o padding */
+    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    background-color: white;
+    color: #3498db;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    max-width: 200px; /* Define a largura máxima do botão */
+    margin: 20px auto 0; /* Centraliza o botão com espaçamento */
+}
+
+.restart-button:hover {
+    background-color: #2980b9;
+    color: white;
+}
