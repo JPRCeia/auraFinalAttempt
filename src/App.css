@@ -36,27 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-/* Responsive styles for mobile devices */
-@media (max-width: 768px) {
-  .App-header {
-    font-size: calc(8px + 2vmin); /* Slightly smaller font size */
-    padding: 10px; /* Add some padding for smaller screens */
-  }
-
-  .App-logo {
-    height: 30vmin; /* Reduce the logo size for mobile */
-  }
-}
-
-/* Responsive styles for tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  .App-header {
-    font-size: calc(9px + 2vmin); /* Adjust font size for tablets */
-    padding: 20px; /* Adjust padding for medium-sized screens */
-  }
-
-  .App-logo {
-    height: 35vmin; /* Slightly smaller logo size for tablets */
-  }
-}

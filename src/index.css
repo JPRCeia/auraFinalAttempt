@@ -15,40 +15,4 @@ html, body {
   flex-direction: column;
 }
 
-/* General Styles */
-body {
-  font-size: 16px;
-  line-height: 1.5;
-}
 
-/* Responsive styles for mobile */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Adjust font size for better readability */
-    padding: 10px;  /* Add padding for smaller screens */
-  }
-
-  #root {
-    flex-direction: column; /* Ensure vertical stacking for content */
-  }
-}
-
-/* Responsive styles for tablets */
-@media (min-width: 769px) and (max-width: 1024px) {
-  body {
-    font-size: 15px; /* Slightly larger font for tablets */
-    padding: 20px;
-  }
-
-  #root {
-    flex-direction: column;
-  }
-}
-
-/* Desktop-specific styles (optional but included for completeness) */
-@media (min-width: 1025px) {
-  body {
-    font-size: 16px; /* Default font size */
-    padding: 30px;
-  }
-}
