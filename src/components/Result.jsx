@@ -86,28 +86,21 @@ const Result = () => {
         <img
           src={`${process.env.PUBLIC_URL}/LogoResult.png`}
           alt="Logo Result"
-          style={{ height: "60px", marginBottom: "10px" }}
+          className="responsive-logo"
         />
 
         {/* Título e Mascote */}
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            marginBottom: "20px",
-          }}
-        >
+        <div className="title-mascot-wrapper">
           <img
             src={`${process.env.PUBLIC_URL}/${dominantData.name}.png`}
             alt={`${process.env.PUBLIC_URL}${dominantData.name} Mascot`}
-            style={{ height: "300px", marginRight: "100px" }}
+            className="responsive-mascot"
           />
           <div>
             <img
               src={`${process.env.PUBLIC_URL}/${dominantData.name}Title.png`}
               alt={`${process.env.PUBLIC_URL}${dominantData.name} Title`}
-              style={{ height: "150px", marginBottom: "20px" }}
+              className="responsive-title"
             />
             <div className="progress-bar">
               <div
@@ -134,37 +127,23 @@ const Result = () => {
         <img
           src={`${process.env.PUBLIC_URL}/${dominantData.name}Points.png`}
           alt={`${process.env.PUBLIC_URL}${dominantData.name} Points`}
-          style={{ height: "180px", marginBottom: "20px", marginTop: "15px" }}
+          className="responsive-points"
         />
 
         {/* Descrição e Outras Personalidades */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            width: "100%",
-          }}
-        >
+        <div className="description-other-personalities">
           <img
             src={`${process.env.PUBLIC_URL}/${dominantData.name}Text.png`}
             alt={`${process.env.PUBLIC_URL}${dominantData.name} Text`}
-            style={{
-              flex: "1",
-              marginRight: "30px",
-              height: "450px",
-              marginTop: "15px",
-            }}
+            className="responsive-text"
           />
-          <div style={{ flex: "1" }}>
+          <div className="other-personalities">
             {sortedPersonalities.map(([personality, percentage]) => {
               const data = personalities[personality];
               if (personality === dominantPersonality) return null;
 
               return (
-                <div
-                  key={personality}
-                  style={{ marginBottom: "20px", marginTop: "-15px" }}
-                >
+                <div key={personality} className="personality-wrapper">
                   {/* Nome da Personalidade */}
                   <div className="personality-name">{personality}</div>
                   {/* Barra de Progresso */}

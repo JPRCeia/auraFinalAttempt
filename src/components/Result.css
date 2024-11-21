@@ -244,3 +244,132 @@
         max-width: 65%;
     }
 }
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    img {
+        max-width: 80%;
+        max-height: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    img {
+        max-width: 70%;
+        max-height: 70%;
+    }
+}
+
+/* Responsive styles */
+.responsive-logo {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.title-mascot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.responsive-mascot {
+    height: 300px;
+    margin-right: 100px;
+}
+
+.responsive-title {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.responsive-points {
+    height: 180px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.description-other-personalities {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.responsive-text {
+    flex: 1;
+    margin-right: 30px;
+    height: 450px;
+    margin-top: 15px;
+}
+
+.other-personalities {
+    flex: 1;
+}
+
+.personality-wrapper {
+    margin-bottom: 20px;
+    margin-top: -15px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .responsive-mascot {
+        height: 250px;
+        margin-right: 80px;
+    }
+    .responsive-title {
+        height: 130px;
+    }
+    .responsive-points {
+        height: 160px;
+    }
+    .responsive-text {
+        height: 400px;
+    }
+}
+
+@media (max-width: 800px) {
+    .responsive-mascot {
+        height: 200px;
+        margin-right: 60px;
+    }
+    .responsive-title {
+        height: 110px;
+    }
+    .responsive-points {
+        height: 140px;
+    }
+    .responsive-text {
+        height: 350px;
+    }
+}
+
+@media (max-width: 600px) {
+    .responsive-mascot {
+        height: 150px;
+        margin-right: 40px;
+    }
+    .responsive-title {
+        height: 90px;
+    }
+    .responsive-points {
+        height: 120px;
+    }
+    .responsive-text {
+        height: 300px;
+    }
+}
