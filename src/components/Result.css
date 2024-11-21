@@ -23,6 +23,7 @@
     overflow: hidden;
     margin-bottom: -5px; /* Define a margem inferior para 5px */
 }
+
 .result-container {
     text-align: center;
     min-height: 100vh;
@@ -30,15 +31,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-color: white; /* Mantém o fundo branco */
 }
   
   .content-wrapper {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* Move o conteúdo para o topo */
     align-items: center;
   }
   
@@ -46,7 +44,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0; /* Remove margem superior desnecessária */
     margin-bottom: 80px; /* Espaçamento menor em relação ao conteúdo */
 }
 
@@ -88,6 +85,7 @@
     height: 61px;
     width: 243px;
     margin-bottom: -10px; /* Ajusta o espaçamento inferior */
+    text-align: left;
 }
 
 .label {
@@ -114,7 +112,9 @@
     overflow: hidden;
     padding: 8px; /* Adiciona o espaço interno */
     box-sizing: border-box; /* Garante que padding não afete o tamanho total */
+    text-align: left;
 }
+
 .fill {
     height: 100%;
     display: flex;
@@ -138,14 +138,56 @@
     font-size: 2rem; /* Aumenta o tamanho da fonte */
     background-color: #3498db; /* Define uma cor de fundo para maior destaque */
     color: white; /* Garante contraste com o fundo */
-    border: none;
     border-radius: 49px; /* Bordas mais arredondadas */
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona animação de hover */
     max-width: 300px; /* Aumenta o limite de largura */
+    margin-top: 50px;
 }
 
 .restart-button:hover {
     background-color: #2980b9; /* Fundo mais escuro no hover */
     transform: scale(1.05); /* Botão levemente maior ao passar o mouse */
+}
+
+/* Media query for 800x1280 screen size */
+@media (max-width: 800px) {
+    .personality-name {
+        width: 200px;
+        font-size: 18px;
+    }
+    .result-container {
+        padding: 10px;
+    }
+    .result-container h1 {
+        font-size: 1.5rem;
+    }
+    .result-content {
+        margin-bottom: 10px;
+    }
+    .description-container {
+        font-size: 0.9rem;
+    }
+    .response-list {
+        font-size: 0.9rem;
+    }
+    .progress-bar {
+        height: 50px;
+        width: 200px;
+    }
+    .label, .personality-label, .percent {
+        font-size: 0.9rem;
+    }
+    .bar {
+        height: 50px;
+        width: 120px;
+    }
+    .fill {
+        font-size: 0.9rem;
+    }
+    .restart-button {
+        padding: 10px 30px;
+        font-size: 1.5rem;
+        max-width: 250px;
+    }
 }
