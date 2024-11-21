@@ -13,78 +13,80 @@
 }
 
 .personality-name {
-    width: 233px;
-    height: 43px;
+    width: 50%;
+    height: 2.5rem;
     font-family: 'RocaOne', sans-serif;
-    font-size: 22px;
-    line-height: 43px;
+    font-size: 1.375rem;
+    line-height: 2.5rem;
     text-align: center;
     color: #333;
     overflow: hidden;
-    margin-bottom: -5px; /* Define a margem inferior para 5px */
+    margin-bottom: -0.3125rem; /* Define a margem inferior para 5px */
 }
-
 .result-container {
     text-align: center;
-    min-height: 100vh;
-    padding: 20px; /* Ajusta o padding */
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white; /* Mantém o fundo branco */
+    max-height: 100%;
 }
   
-  .content-wrapper {
+.content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+    max-height: 90%;
+}
   
-  .restart-wrapper {
+.restart-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px; /* Espaçamento menor em relação ao conteúdo */
+    margin-bottom: 5%; /* Espaçamento menor em relação ao conteúdo */
+    margin-top: 5%;
+    max-height: fit-content;
 }
 
 .result-container h1 {
-    margin-bottom: 20px; /* Ajusta o espaçamento inferior */
-    font-size: 2rem; /* Ajusta o tamanho da fonte */
-    color: inherit; /* Permite que a cor seja herdada do estilo inline */
+    margin-bottom: 2%;
+    font-size: 2rem;
+    color: inherit;
     text-align: center;
 }
 
 .result-content {
     display: flex;
     width: 100%;
-    flex-direction: column; /* Muda para coluna para melhor visualização em tablet */
+    flex-direction: column;
     align-items: center;
-    margin-bottom: 20px; /* Ajusta o espaçamento inferior */
+    margin-bottom: 2%;
 }
 
 .description-container {
-    font-family: '72 Brand', Arial, sans-serif; /* Aplica a fonte 72 Brand */
+    font-family: '72 Brand', Arial, sans-serif;
     width: 100%;
     text-align: left;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
-    color: black; /* Descrição da personalidade em preto */
-    margin-bottom: 20px; /* Ajusta a margem inferior */
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 2%;
 }
 
 .response-list {
     width: 100%;
-    margin-top: 10px; /* Ajusta espaçamento superior */
+    margin-top: 1%;
     text-align: left;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-size: 1rem;
 }
 
 .progress-bar {
     display: flex;
     align-items: center;
-    border-radius: 49px;
-    height: 61px;
-    width: 243px;
-    margin-bottom: -10px; /* Ajusta o espaçamento inferior */
+    border-radius: 2.5rem;
+    height: 3.8rem;
+    width: 60%;
+    margin-bottom: -0.625rem;
     text-align: left;
 }
 
@@ -92,29 +94,28 @@
     flex: 2;
     text-align: left;
     color: black;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
-    margin-right: 20px; /* Ajusta o espaçamento à direita */
+    font-size: 1rem;
+    margin-right: 5%;
 }
 
 .personality-label {
     text-align: left;
     color: black;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
-    margin-bottom: 5px; /* Espaçamento inferior para afastar ligeiramente da barra */
+    font-size: 1rem;
+    margin-bottom: 0.3125rem;
 }
 
 .bar {
     flex: 5;
-    width: 141px;
-    height: 60px;
+    width: 60%;
+    height: 3.75rem;
     background-color: #e0e0e0;
-    border-radius: 55px;
+    border-radius: 2.75rem;
     overflow: hidden;
-    padding: 8px; /* Adiciona o espaço interno */
-    box-sizing: border-box; /* Garante que padding não afete o tamanho total */
+    padding: 0.5rem;
+    box-sizing: border-box;
     text-align: left;
 }
-
 .fill {
     height: 100%;
     display: flex;
@@ -124,46 +125,72 @@
     font-weight: bold;
     font-size: 1rem;
     white-space: nowrap;
-    border-radius: 45px; /* Ajusta para ficar alinhado ao padding */
+    border-radius: 2.25rem;
 }
 
 .percent {
     text-align: right;
     color: black;
-    font-size: 1rem; /* Ajusta o tamanho da fonte */
+    font-size: 1rem;
 }
 
 .restart-button {
-    padding: 15px 40px; /* Aumenta o padding para maior área clicável */
-    font-size: 2rem; /* Aumenta o tamanho da fonte */
-    background-color: #3498db; /* Define uma cor de fundo para maior destaque */
-    color: white; /* Garante contraste com o fundo */
-    border-radius: 49px; /* Bordas mais arredondadas */
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    background-color: #3498db;
+    color: white;
+    border-radius: 2.5rem;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Adiciona animação de hover */
-    max-width: 300px; /* Aumenta o limite de largura */
-    margin-top: 50px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 80%;
+    margin-top: 5%;
 }
 
 .restart-button:hover {
-    background-color: #2980b9; /* Fundo mais escuro no hover */
-    transform: scale(1.05); /* Botão levemente maior ao passar o mouse */
+    background-color: #2980b9;
+    transform: scale(1.05);
 }
 
-/* Media query for 800x1280 screen size */
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .personality-name {
+        width: 45%;
+        font-size: 1.25rem;
+    }
+    .result-container h1 {
+        font-size: 1.8rem;
+    }
+    .progress-bar {
+        height: 3.5rem;
+        width: 55%;
+    }
+    .bar {
+        height: 3.5rem;
+        width: 55%;
+    }
+    .fill {
+        font-size: 0.95rem;
+    }
+    .restart-button {
+        padding: 0.75rem 2rem;
+        font-size: 1.8rem;
+        max-width: 75%;
+    }
+}
+
 @media (max-width: 800px) {
     .personality-name {
-        width: 200px;
-        font-size: 18px;
+        width: 40%;
+        font-size: 1.125rem;
     }
     .result-container {
-        padding: 10px;
+        padding: 1%;
     }
     .result-container h1 {
         font-size: 1.5rem;
     }
     .result-content {
-        margin-bottom: 10px;
+        margin-bottom: 1%;
     }
     .description-container {
         font-size: 0.9rem;
@@ -172,22 +199,48 @@
         font-size: 0.9rem;
     }
     .progress-bar {
-        height: 50px;
-        width: 200px;
+        height: 3rem;
+        width: 50%;
     }
     .label, .personality-label, .percent {
         font-size: 0.9rem;
     }
     .bar {
-        height: 50px;
-        width: 120px;
+        height: 3rem;
+        width: 50%;
     }
     .fill {
         font-size: 0.9rem;
     }
     .restart-button {
-        padding: 10px 30px;
+        padding: 0.5rem 1.5rem;
         font-size: 1.5rem;
-        max-width: 250px;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .personality-name {
+        width: 35%;
+        font-size: 1rem;
+    }
+    .result-container h1 {
+        font-size: 1.2rem;
+    }
+    .progress-bar {
+        height: 2.8rem;
+        width: 45%;
+    }
+    .bar {
+        height: 2.8rem;
+        width: 45%;
+    }
+    .fill {
+        font-size: 0.85rem;
+    }
+    .restart-button {
+        padding: 0.4rem 1.25rem;
+        font-size: 1.2rem;
+        max-width: 65%;
     }
 }
