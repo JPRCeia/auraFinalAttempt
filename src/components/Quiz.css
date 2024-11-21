@@ -168,7 +168,7 @@
 
     .header,
     .header-top {
-        max-width: 95%; /* Adjust header width for mobile */
+        max-width: 100%; /* Adjust header width for mobile */
     }
 
     .header-left {

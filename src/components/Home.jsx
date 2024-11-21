@@ -13,7 +13,7 @@ const Home = () => {
     <div className="home-container">
       <div className="circle-container">
         <div className="logo-container">
-          <img src="/Logo.png" alt="Logo" className="home-logo" /> {/* Adicione o caminho correto para a logo */}
+          <img src={`${process.env.PUBLIC_URL}/Logo.png`} alt="Logo" className="home-logo" /> {/* Adicione o caminho correto para a logo */}
           <span className="circle-text">aura</span>
         </div>
       </div>
