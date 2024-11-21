@@ -149,12 +149,12 @@ const Quiz = () => {
   questions.forEach(question => shuffleArray(question.options));
   
   const logoToBackgroundMap = [
-    { logo: '/LogoRed.png', backgroundColor: '#F05AE6' },
-    { logo: '/LogoYellow.png', backgroundColor: '#BF3032' },
-    { logo: '/LogoBlue.png', backgroundColor: '#28A16C' },
-    { logo: '/LogoGreen.png', backgroundColor: '#FFB52B' },
-    { logo: '/LogoPurple.png', backgroundColor: '#3E70E6' },
-    { logo: '/LogoPink.png', backgroundColor: '#4A0C7B' },
+    { backgroundColor: '#F05AE6' },
+    { backgroundColor: '#BF3032' },
+    { backgroundColor: '#28A16C' },
+    { backgroundColor: '#FFB52B' },
+    { backgroundColor: '#3E70E6' },
+    { backgroundColor: '#4A0C7B' },
   ];
   
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -207,9 +207,6 @@ const Quiz = () => {
           <div className="header-left">
             <span>aura</span>
           </div>
-        </div>
-        <div className="header-right">
-          <img src={logoBackground.logo} alt="Logo" className="quiz-logo" />
         </div>
         <h1 className="question">{currentQuestion.question}</h1>
       </div>
