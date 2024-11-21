@@ -6,7 +6,7 @@ import Result from './components/Result';
 
 function App() {
   return (
-    <Router basename='/'>
+    <Router basename='https://jprceia.github.io/auraFinalAttempt/'>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/quiz" element={<Quiz />} />
