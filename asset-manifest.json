@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/auraFinalAttempt/static/css/main.cab48221.css",
-    "main.js": "/auraFinalAttempt/static/js/main.16fd16d9.js",
+    "main.js": "/auraFinalAttempt/static/js/main.55192307.js",
     "static/js/453.b6f6f924.chunk.js": "/auraFinalAttempt/static/js/453.b6f6f924.chunk.js",
     "static/media/Roca Bold.ttf": "/auraFinalAttempt/static/media/Roca Bold.3409c9883262792d522e.ttf",
     "static/media/Roca Regular.ttf": "/auraFinalAttempt/static/media/Roca Regular.71799ded8b4bb96e5b89.ttf",
@@ -9,11 +9,11 @@
     "static/media/72-Bold.woff": "/auraFinalAttempt/static/media/72-Bold.116428f681602cde509e.woff",
     "index.html": "/auraFinalAttempt/index.html",
     "main.cab48221.css.map": "/auraFinalAttempt/static/css/main.cab48221.css.map",
-    "main.16fd16d9.js.map": "/auraFinalAttempt/static/js/main.16fd16d9.js.map",
+    "main.55192307.js.map": "/auraFinalAttempt/static/js/main.55192307.js.map",
     "453.b6f6f924.chunk.js.map": "/auraFinalAttempt/static/js/453.b6f6f924.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cab48221.css",
-    "static/js/main.16fd16d9.js"
+    "static/js/main.55192307.js"
   ]
 }
