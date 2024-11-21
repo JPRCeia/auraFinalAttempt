@@ -142,7 +142,7 @@
     border-radius: 2.5rem;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    max-width: 80%;
+    max-width: 100%;
     margin-top: 5%;
 }
 
@@ -276,31 +276,31 @@ img {
 
 /* Responsive styles */
 .responsive-logo {
-    height: 60px;
-    margin-bottom: 10px;
+    height: 6vh;
+    margin-bottom: 1rem;
 }
 
 .title-mascot-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .responsive-mascot {
-    height: 300px;
-    margin-right: 100px;
+    height: 30vh;
+    margin-right: 5vw;
 }
 
 .responsive-title {
-    height: 150px;
-    margin-bottom: 20px;
+    height: 15vh;
+    margin-bottom: 2rem;
 }
 
 .responsive-points {
-    height: 180px;
-    margin-bottom: 20px;
-    margin-top: 15px;
+    height: 18vh;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
 }
 
 .description-other-personalities {
@@ -311,9 +311,9 @@ img {
 
 .responsive-text {
     flex: 1;
-    margin-right: 30px;
-    height: 450px;
-    margin-top: 15px;
+    margin-right: 3vw;
+    height: 45vh;
+    margin-top: 1.5rem;
 }
 
 .other-personalities {
@@ -321,55 +321,55 @@ img {
 }
 
 .personality-wrapper {
-    margin-bottom: 20px;
-    margin-top: -15px;
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .responsive-mascot {
-        height: 250px;
-        margin-right: 80px;
+        height: 25vh;
+        margin-right: 4vw;
     }
     .responsive-title {
-        height: 130px;
+        height: 13vh;
     }
     .responsive-points {
-        height: 160px;
+        height: 16vh;
     }
     .responsive-text {
-        height: 400px;
+        height: 40vh;
     }
 }
 
 @media (max-width: 800px) {
     .responsive-mascot {
-        height: 200px;
-        margin-right: 60px;
+        height: 20vh;
+        margin-right: 3vw;
     }
     .responsive-title {
-        height: 110px;
+        height: 11vh;
     }
     .responsive-points {
-        height: 140px;
+        height: 14vh;
     }
     .responsive-text {
-        height: 350px;
+        height: 35vh;
     }
 }
 
 @media (max-width: 600px) {
     .responsive-mascot {
-        height: 150px;
-        margin-right: 40px;
+        height: 15vh;
+        margin-right: 2vw;
     }
     .responsive-title {
-        height: 90px;
+        height: 9vh;
     }
     .responsive-points {
-        height: 120px;
+        height: 12vh;
     }
     .responsive-text {
-        height: 300px;
+        height: 30vh;
     }
 }
