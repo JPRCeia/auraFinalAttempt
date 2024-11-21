@@ -140,6 +140,15 @@
 
 /* Media Queries for responsiveness */
 @media (max-width: 1024px) {
+    .quiz-container {
+        max-width: 100%; /* Adjust container width for tablets */
+    }
+
+    .header,
+    .header-top {
+        max-width: 100%; /* Adjust header width for tablets */
+    }
+
     .question {
         font-size: 3rem; /* Adjust question text size for mobile */
         width: 90%; /* Occupy 90% of the available width */
@@ -153,6 +162,15 @@
 }
 
 @media (max-width: 768px) {
+    .quiz-container {
+        max-width: 100%; /* Adjust container width for mobile */
+    }
+
+    .header,
+    .header-top {
+        max-width: 95%; /* Adjust header width for mobile */
+    }
+
     .header-left {
         font-size: 2rem; /* Adjust title text size for mobile */
     }
