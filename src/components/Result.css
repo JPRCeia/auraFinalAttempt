@@ -114,3 +114,68 @@
     background-color: #2980b9;
     color: white;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .result-container h1 {
+        font-size: 1.8rem; /* Adjust font size for tablets */
+    }
+
+    .description-container {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+
+    .response-list {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+
+    .progress-bar {
+        height: 50px; /* Adjust height for tablets */
+        width: 200px; /* Adjust width for tablets */
+    }
+
+    .bar {
+        width: 120px; /* Adjust width for tablets */
+        height: 40px; /* Adjust height for tablets */
+    }
+
+    .fill {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+
+    .restart-button {
+        font-size: 0.9rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .result-container h1 {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+
+    .description-container {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+
+    .response-list {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+
+    .progress-bar {
+        height: 40px; /* Adjust height for mobile */
+        width: 150px; /* Adjust width for mobile */
+    }
+
+    .bar {
+        width: 100px; /* Adjust width for mobile */
+        height: 30px; /* Adjust height for mobile */
+    }
+
+    .fill {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+
+    .restart-button {
+        font-size: 0.8rem; /* Adjust font size for mobile */
+    }
+}

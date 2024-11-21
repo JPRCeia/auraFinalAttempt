@@ -137,3 +137,34 @@
     background-color: #BCC3CA; /* Muda a cor de fundo do botão Back quando em hover para a cor do texto original */
     color: #fff; /* Muda a cor do texto do botão Back para branco ao passar o mouse */
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .option-button,
+    .next-button {
+        width: 28em; /* Adjust button width for tablets */
+        font-size: 1.2rem; /* Adjust font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-left {
+        font-size: 3rem; /* Adjust title text size for mobile */
+    }
+
+    .question {
+        font-size: 1.5rem; /* Adjust question text size for mobile */
+        width: 90%; /* Occupy 90% of the available width */
+    }
+
+    .option-button,
+    .next-button {
+        width: 20em; /* Adjust button width for mobile */
+        font-size: 1rem; /* Adjust font size for mobile */
+    }
+
+    .back-button {
+        width: 6em; /* Adjust Back button width for mobile */
+        font-size: 1.5rem; /* Adjust Back button font size for mobile */
+    }
+}

@@ -30,3 +30,24 @@
   text-align: right;
   font-size: 1rem;
 }
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .label, .percent {
+    font-size: 0.9rem; /* Adjust font size for tablets */
+  }
+
+  .bar {
+    height: 12px; /* Adjust bar height for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .label, .percent {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+  }
+
+  .bar {
+    height: 10px; /* Adjust bar height for mobile */
+  }
+}

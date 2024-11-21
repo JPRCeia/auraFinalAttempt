@@ -123,12 +123,44 @@ h1 {
         height: 300px; /* Adjusted size for mobile */
         margin-bottom: 30px; /* Adjusted margin for mobile */
     }
+
+    .home-logo {
+        width: 350px; /* Adjusted size for mobile */
+        height: 350px; /* Adjusted size for mobile */
+    }
+
+    .circle-text {
+        font-size: 3em; /* Adjusted font size for mobile */
+    }
+
+    .start-button {
+        padding: 15px 60px; /* Adjusted padding for mobile */
+        font-size: 1.2em; /* Adjusted font size for mobile */
+        top: 350px; /* Adjusted position for mobile */
+    }
 }
 
+
+/* Media query for smaller mobile devices */
 @media (max-width: 480px) {
     .circle-container {
         width: 200px; /* Adjusted size for smaller mobile screens */
         height: 200px; /* Adjusted size for smaller mobile screens */
         margin-bottom: 20px; /* Adjusted margin for smaller mobile screens */
+    }
+
+    .home-logo {
+        width: 250px; /* Adjusted size for smaller mobile screens */
+        height: 250px; /* Adjusted size for smaller mobile screens */
+    }
+
+    .circle-text {
+        font-size: 2em; /* Adjusted font size for smaller mobile screens */
+    }
+
+    .start-button {
+        padding: 10px 40px; /* Adjusted padding for smaller mobile screens */
+        font-size: 1em; /* Adjusted font size for smaller mobile screens */
+        top: 250px; /* Adjusted position for smaller mobile screens */
     }
 }
